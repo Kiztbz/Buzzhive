@@ -1,0 +1,104 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: darkslategray;
+}
+
+.header
+{
+    width:100%;
+    height:80px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+}
+.footer
+{
+    width:100%;
+    height:50px;
+    color:white;
+    background-color: black;
+    position: absolute;
+    bottom:0px;
+}
+.question
+{
+    font-size: 30px;
+    width:80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.list iframe
+{
+    border: none;
+    width: 100%;
+    margin: auto;
+}
+
+/*HEADER*/
+.logo
+{
+    width: 15%;
+    background-color: aliceblue;
+    padding:30px;
+}
+.navbar
+{
+    background-color: aquamarine;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    border: 1px solid white ;
+}
+
+.nav
+{
+    margin: auto;
+}
+
+.search
+{
+    height: 20px;
+}
+.items
+{
+    position: relative;
+    z-index: 99;
+}
+.items ul{
+    list-style: none;
+}
+#list
+{
+    display: none;
+    text-decoration: none;
+    height: 150px;
+    background-color: aliceblue;
+}
+#list li
+{
+    margin:5px;
+
+}
+#list li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*Mobile phones*/
+@media screen and (max-width:450px)
+{
+    .logo
+    {
+        width:5%;
+    }
+    .op
+    {
+        display: none;
+    }
+}

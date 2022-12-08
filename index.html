@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ui.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">M Notes</div>
+        <div class="navbar">
+            <div class="class nav op">class</div>
+            <div class="subs nav op">subjects</div>
+            <div class="about nav op">about</div>
+            <div class="search nav">
+                <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar" onfocus="show()">
+                <div class="items">
+                    <ul id="list">
+                        <li><a href="">Physics</a></li>
+                        <li><a href="">Chemistry</a></li>
+                        <li><a href="">Mathematics</a></li>
+                        <li><a href="">Computer Science</a></li>
+                        <li><a href="">Biology</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question">Lost in Syllabus?<br>Scared of studying?<br>Don't Worry we're here to help!
+        <div class="list">
+            <p><iframe src="test.txt"></iframe></p>
+        </div>
+    </div>
+    <div class="footer">this is a footer.</div>
+
+    <script>
+        function show()
+        {
+            var input = document.getElementById('search');
+            var l = document.getElementById('list');
+            input.addEventListener('click', function(){
+                l.style.display = 'block';
+            })
+            input.addEventListener('focusout', function(){
+                l.style.display = 'none';
+            })
+        }
+
+
+
+        function openPage() {
+            var x = document.getElementById("search").value.toUpperCase();
+            var ul = document.getElementById('list');
+            var li = ul.getElementsByTagName('li');
+
+            for (var i = 0; i < li.length; i++) {
+                var a = li[i].getElementsByTagName('a')[0];
+
+                var textValue = a.textContent.toUpperCase();
+                if (textValue.indexOf(x) > -1) {
+                    li[i].style.display = '';
+                }
+                else {
+                    li[i].style.display = 'none';
+                }
+            }
+            /*if(x === "dog")
+            {
+                window.open("/index.html");
+            }*/
+
+        }
+    </script>
+</body>
+
+</html>
