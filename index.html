@@ -26,7 +26,7 @@
                 </select>
             </div>
             <div class="subs nav op">
-                <select >
+                <select>
                     <option value="" style="display:none">Class</option>
                     <option value="">9th</option>
                     <option value="">10th</option>
@@ -34,47 +34,84 @@
                     <option value="">12th</option>
                 </select>
             </div>
-            <div class="about nav op"><option><a href="#">About</a></option></div>
+            <div class="about nav op">
+                <option><a href="#">About</a></option>
+            </div>
             <div class="search nav">
-                <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar" onfocus="show()">
-                <div class="items">
-                    <ul id="list">
-                        <li><a href="">Physics</a></li>
+                <div class="searchbar">
+                    <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar"
+                        onfocus="show()">
+                </div>
+                <div class="items" id="it">
+                    <ul id="list" id="search">
+                        <li><a href="https://www.google.com">Physics<br>kiztbz</a></li>
                         <li><a href="">Chemistry</a></li>
                         <li><a href="">Mathematics</a></li>
                         <li><a href="">Computer Science</a></li>
                         <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li id="notext" style="list-style: none;"></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="question">Lost in Syllabus?<br>Scared of studying?<br>Don't Worry we're here to help!
-        <div class="list">
-            <p><iframe src="test.txt"></iframe></p>
+    <div class="body">
+        <div class="introsec">
+            <div class="books">
+                <div class="book">HC Verma Physics</div>
+                <div class="book">ML Aggarwal Maths</div>
+                <div class="book">Concept of Physics</div>
+                <div class="book">NCERT</div>
+                <div class="book">Nootan Chemistry</div>
+            </div>
+            <div class="intro">
+                <div class="intropara">
+                    Lost in Syllabus?<br>
+                    Scared of studying?<br>
+                    Don't Worry we're here to help!
+                </div>
+                <div class="list">
+                    <iframe class="frame" src="test.txt" ></iframe>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">this is a footer.</div>
 
     <script>
-        function show()
-        {
+        function show() {
             var input = document.getElementById('search');
-            var l = document.getElementById('list');
-            input.addEventListener('click', function(){
+            var l = document.getElementById('it');
+            input.addEventListener('focus', function () {
                 l.style.display = 'block';
+                l.style.opacity = '1';
             })
-            input.addEventListener('focusout', function(){
-                l.style.display = 'none';
+            input.addEventListener('click', function () {
+                l.style.display = 'block';
+                l.style.opacity = '1';
+            })
+            input.addEventListener('focusout', function () {
+                setTimeout(function () { l.style.opacity = '0'; }, 0);
+                setTimeout(function () { l.style.display = 'none' }, 200);
+
             })
         }
 
-
-
         function openPage() {
+            document.getElementById('notext').innerHTML = "";
             var x = document.getElementById("search").value.toUpperCase();
             var ul = document.getElementById('list');
             var li = ul.getElementsByTagName('li');
+            var f = 2;
 
             for (var i = 0; i < li.length; i++) {
                 var a = li[i].getElementsByTagName('a')[0];
@@ -86,12 +123,15 @@
                 else {
                     li[i].style.display = 'none';
                 }
-            }
-            /*if(x === "dog")
-            {
-                window.open("/index.html");
-            }*/
 
+                if (textValue.indexOf(x) == -1) {
+                    f++;
+                }
+                if (f > li.length) {
+                    document.getElementById('notext').innerHTML = "No results found";
+
+                }
+            }
         }
     </script>
 </body>

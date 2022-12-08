@@ -17,6 +17,7 @@ body{
     background-color: var(--body);
     color:var(--font);
     overflow-x: hidden;
+    height: 800px;
 }
 
 .header
@@ -33,21 +34,8 @@ body{
     height:50px;
     color:var(--font);
     background-color: black;
-    position: absolute;
+    position:fixed;
     bottom:0px;
-}
-.question
-{
-    font-size: 30px;
-    width:80%;
-    margin: auto;
-    margin-top: 30px;
-}
-.list iframe
-{
-    border: none;
-    width: 100%;
-    margin: auto;
 }
 
 /*HEADER*/
@@ -101,33 +89,130 @@ body{
 }
 .search
 {
-    height: 20px;
+    padding: 10px;
+    padding-right: 0px;
+    width: 30%;
+    height: 400px;
+    margin-right: 0px;
+    position: relative;
+    top:0px;
+    border-radius: 5px;
+}
+.searchbar
+{
+    height: 40px;
+}
+.searchbar input
+{
+    margin-left: 10px;
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: var(--body);
+    color: var(--font);
 }
 .items
 {
     position: relative;
     z-index: 99;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 85%;
+    display: none;
+    opacity: 100%;
 }
 .items ul{
-    list-style: none;
+    /*list-style: none;*/
+    color: black;
 }
 #list
 {
-    display: none;
+    /*display: ;*/
     text-decoration: none;
-    height: 150px;
-    background-color: aliceblue;
+    background-color: rgba(133, 131, 131, 0.911);
+    height: auto;
+    max-height: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-right: 25px;
+    overflow:scroll;
 }
 #list li
 {
     margin:5px;
-
+    margin-left: 25px;
+    margin-top: 10px;
 }
 #list li a
 {
     text-decoration: none;
     color: black;
 }
+
+/*intro*/
+.introsec
+{
+    display: flex;
+    flex-direction: row;
+}
+.books
+{
+    width:15%;
+    padding:20px;
+    padding-top: 0px;
+    margin-left: -5px;
+}
+.book
+{
+    background-color: var(--c3);
+    margin:10px;
+    padding: 10px;
+    margin-left: -20px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.intro
+{
+    width: 85%;
+    margin: 10px;
+    margin-right: -5px;
+    display: flex;
+    flex-direction: row;
+}
+.intropara
+{
+    width: 70%;
+    margin: auto;
+    margin-top:30px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #131917;
+}
+.list
+{
+    width: 30%;
+    margin-top: 0px;
+}
+.list iframe
+{
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 5px;
+}
+.frame
+{
+    border: none;
+    width: 100%;
+    margin: auto;
+    color: var(--font);
+}
+
+
 
 /*Mobile phones*/
 @media screen and (max-width:450px)
@@ -143,5 +228,25 @@ body{
     .navbar
     {
         margin: 5px;
+    }
+
+    .intro
+    {
+        display: block;
+    }
+    .search
+    {
+        width: 100%;
+    }
+    .books{
+        display: none;
+    }
+    .list
+    {
+        padding: 10px;
+    }
+    .list iframe
+    {
+        width: 290px;
     }
 }
