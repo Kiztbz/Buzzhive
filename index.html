@@ -15,9 +15,26 @@
             <div class="logotxt">M Notes</div>
         </div>
         <div class="navbar">
-            <div class="class nav op">class</div>
-            <div class="subs nav op">subjects</div>
-            <div class="about nav op">about</div>
+            <div class="sub nav op">
+                <select onchange="location = this.value;">
+                    <option value="" style="display:none">Subjects</option>
+                    <option value="https://www.google.com">Physics</option>
+                    <option value="">Chemistry</option>
+                    <option value="">Biology</option>
+                    <option value="">Computer Science</option>
+                    <option value="">English</option>
+                </select>
+            </div>
+            <div class="subs nav op">
+                <select >
+                    <option value="" style="display:none">Class</option>
+                    <option value="">9th</option>
+                    <option value="">10th</option>
+                    <option value="">11th</option>
+                    <option value="">12th</option>
+                </select>
+            </div>
+            <div class="about nav op"><option><a href="#">About</a></option></div>
             <div class="search nav">
                 <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar" onfocus="show()">
                 <div class="items">
