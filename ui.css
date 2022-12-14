@@ -17,7 +17,8 @@ body{
     background-color: var(--body);
     color:var(--font);
     overflow-x: hidden;
-    height: 800px;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 .header
@@ -31,26 +32,31 @@ body{
 .footer
 {
     width:100%;
-    height:50px;
+    height:60px;
     color:var(--font);
     background-color: black;
     position:fixed;
     bottom:0px;
+    display: flex;
+    flex-direction: row;
 }
 
 /*HEADER*/
 .logo
 {
     width: 15%;
+    height: 60px;
     background-color: var(--c3);
-    padding:20px;
     margin: auto;
+    min-width: 200px;
     border-radius: 5px;
     margin-left: -5px;
 }
-.logotxt
+.logoimg img
 {
-    margin: auto;
+    margin:5px;
+    margin-left: 10px;
+    height: 50px;
 }
 .navbar
 {
@@ -210,6 +216,45 @@ body{
     width: 100%;
     margin: auto;
     color: var(--font);
+}
+
+/*Body*/
+.par
+{
+    margin: 50px;
+}
+
+/*FOOTER*/
+.copyright
+{
+    margin:10px;
+    font-size: 11px;
+}
+.links
+{
+    font-size: 12px;
+    margin: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 4 0px;
+}
+.links a
+{
+    text-decoration: none;
+    color :aliceblue
+}
+.links ul {
+    list-style-type: none;
+}
+.links ul li img
+{
+    height: 14px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+#disc
+{
+    height:11px;
 }
 
 
