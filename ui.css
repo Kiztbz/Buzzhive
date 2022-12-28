@@ -40,6 +40,8 @@ body {
     bottom: 0px;
     display: flex;
     flex-direction: row;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
 }
 
 /*HEADER*/
@@ -56,6 +58,7 @@ body {
     margin: 5px;
     margin-left: 10px;
     height: 50px;
+    content: url(buzzhive-high-resolution-logo-color-on-transparent-background.png);
 }
 
 .navbar {
@@ -141,6 +144,10 @@ body {
 #list li a {
     text-decoration: none;
     color: black;
+}
+.menu
+{
+    display: none;
 }
 
 
@@ -316,7 +323,12 @@ body {
 /*FOOTER*/
 .copyright {
     margin: 10px;
-    font-size: 11px;
+    font-size: 15px;
+}
+.diff
+{
+    font-family:Times New Roman;
+    font-size: 13px;
 }
 
 .links {
@@ -325,6 +337,7 @@ body {
     margin-top: 5px;
     margin-left: auto;
     margin-right: 4 0px;
+    font-size: 15px;
 }
 
 .links a {
@@ -351,22 +364,44 @@ body {
 /*Mobile phones*/
 @media screen and (max-width:450px) {
     .logo {
-        width: 15%;
+        min-width:10%;
+        width: 10%;
     }
 
-    .op {
-        display: none;
+    .logoimg img
+    {
+        content: url(buzzhive-website-favicon-color.png);
     }
 
     .navbar {
+        width:80%;
         margin: 5px;
+        margin-right: auto;
+    }
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin: auto;
+        margin-left: auto;
+        width: 10%;
+        padding: 10px;
+        margin-left: 5px;
     }
 
     .intro {
         display: block;
     }
+    .intropara
+    {
+        width: 100%;
+        font-size: 20px;
+    }
 
     .search {
+        width: 80%;
+        display: block;
         width: 100%;
     }
 
