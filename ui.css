@@ -76,6 +76,8 @@ body {
 
 .nav {
     margin: auto;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
 }
 
 .search {
@@ -187,6 +189,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     background-color: #131917;
+    font-family: 'Bebas Neue', cursive;
 }
 
 
@@ -240,6 +243,11 @@ body {
     margin-bottom: 100px;
     width: 80%;
     text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+.par h1{
+    font-family: 'Rubik Bubbles', cursive;
 }
 
 /*w3schools dump*/
