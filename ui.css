@@ -6,7 +6,10 @@
     --body: #131917;
     --font: white;
 }
-
+html
+{
+    overflow-x: hidden;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -176,7 +179,7 @@ body {
     animation-duration: 2s;
     animation-name: slidein;
     animation-delay: 5ms;
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 100px;
@@ -190,12 +193,13 @@ body {
 @keyframes slidein {
     from {
         margin-bottom: 100%;
-        width: 300%;
+        margin-left: 100%;
+
     }
 
     60% {
         margin-left: -5%;
-        width: 100%;
+
     }
 
     70% {
