@@ -260,7 +260,7 @@ body {
 {
     background-color: #2d424a;
     padding: 15px;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
 }
 .blocklist
@@ -469,7 +469,7 @@ body {
 }
 
 /*tablet view*/
-@media screen and (max-width:650px) {
+@media screen and (max-width:850px) {
 
 
 
