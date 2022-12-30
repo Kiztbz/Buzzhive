@@ -256,25 +256,25 @@ body {
 .par h1{
     font-family: 'Rubik Bubbles', cursive;
 }
-.chap
+.block
 {
     background-color: #2d424a;
     padding: 15px;
     width: 50%;
     border-radius: 10px;
 }
-.chaplist
+.blocklist
 {
     border-radius: 5px;
     text-align: left;
     padding: 20px;
 }
-.chaplist a
+.block a
 {
     text-decoration: none;
     color: var(--font);
 }
-.chaplist a:hover
+.blocklist a:hover
 {
     color : rgb(100, 200, 100);
     animation-duration: 0.7s;
