@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="buzzhive-website-favicon-color.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="ui.css">
+    <title>Buzzhive</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logoimg">
+                <img>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navlinks">
+                <div class="home nav"><a href="https://kiztbz.github.io/Buzzhive">Home</a></div>
+                <div class="dropdown nav">
+                    <button class="dropbtn">Subjects
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="physics.html">Physics</a>
+                        <a href="#">Chemistry</a>
+                        <a href="#">Biology</a>
+                        <a href="#">Mathematics</a>
+                        <a href="#">Computer Science</a>
+                    </div>
+                </div>
+                <div class="dropdown nav">
+                    <button class="dropbtn">Books
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">ML Aggarwal</a>
+                    </div>
+                </div>
+                <div class="search nav">
+                    <div class="searchbar">
+                        <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar"
+                            onfocus="show()">
+                    </div>
+                    <div class="items" id="it">
+                        <ul id="list" id="search">
+                            <li><a href="physics.html">Physics</a></li>
+                            <li><a href="">Chemistry</a></li>
+                            <li><a href="">Mathematics</a></li>
+                            <li><a href="">Computer Science</a></li>
+                            <li><a href="">Biology</a></li>
+                            <li id="notext" style="list-style: none;"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div clsas="menuimg"><img src="menu_FILL1_wght400_GRAD0_opsz48.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="intro">
+            <div class="intropara">
+                <h1>Physics can be easy!</h1>
+                <h1>Just look at it with a Logical Approach.</h1>
+            </div>
+        </div>
+        <div class="chap par">
+            <h1># Chapters</h1><br>
+            <ul class="chaplist">
+                <li><a href="" target="__blank">Chapter 1 - Physical World And Measurement</a></li>
+                <li><a href="" target="__blank">Chapter 2 - Kinematics</a></li>
+                <li><a href="" target="__blank">Chapter 3 - Laws of Motion</a></li>
+                <li><a href="" target="__blank">Chapter 4 - Work, Power and Energy</a></li>
+                <li><a href="" target="__blank">Chapter 5 - Motion of System of Particles and Rigid body</a></li>
+                <li><a href="" target="__blank">Chapter 6 - Gravitation</a></li>
+                <li><a href="" target="__blank">Chapter 7 - Properties of Bulk matter</a></li>
+                <li><a href="" target="__blank">Chapter 8 - Heat and Thermodynamics</a></li>
+                <li><a href="" target="__blank">Chapter 9 - Behaviour of Perfect Gases and Kinetic Theory of Gasses</a></li>
+                <li class="inactive"><a href="" target="__blank">Chapter 10 - Oscillations and Waves</a></li>
+            </ul>
+        </div>
+        <div class="quest par">
+            <ul class="questlist">
+                <li><a href="" target="__blank">Chapter 2 - Kinematics</a></li>
+                <li><a href="" target="__blank">Chapter 2 - Kinematics</a></li>
+                <li><a href="" target="__blank">Chapter 2 - Kinematics</a></li>
+                <li><a href="" target="__blank">Chapter 2 - Kinematics</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div><span class ="diff">&trade;</span> Buzzhive</div>
+            <span class ="diff">&reg;</span> Kiztbz<br>
+            <span class ="diff">&copy;</span> Mythical Corporations 2023
+        </div>
+        <div class="links">
+            <ul>
+                <a href="https://www.instagram.com/kiztbz/" target="__blank">
+                    <li><img src="insta.png">Instagram</li>
+                </a>
+                <a href="https://github.com/Kiztbz" target="__blank">
+                    <li><img src="git.png">Github</li>
+                </a>
+                <a href="https://discord.gg/9pjBmKaanZ" target="__blank">
+                    <li><img id="disc" src="disc.png">Discord</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>

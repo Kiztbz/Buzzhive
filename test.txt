@@ -1,1 +1,351 @@
-We upload solutions to every problem that we solve to help fellow mates cope up with the syllabus. The syllabus isn't that difficult. What makes it difficult is the way one studies it. If you're facing resistance in completing your syllabus, we recommend start from the very basics!
+:root
+{
+    --c: darkcyan;
+    --c2: cadetblue;
+    --c3:#2d424a;
+    --c4: aliceblue;
+    --body:#131917;
+    --font: white;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: var(--body);
+    color:var(--font);
+    overflow-x: hidden;
+    height: auto;
+}
+
+.header
+{
+    width:100%;
+    height:80px;
+    background-color: var(--c3);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.footer
+{
+    width:100%;
+    height:60px;
+    color:var(--font);
+    background-color: black;
+    position:relative;
+    bottom:0px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*HEADER*/
+.logo
+{
+    width:20%;
+    height: 60px;
+    margin: auto;
+    min-width: 200px;
+    border-radius: 5px;
+    margin-left: -5px;
+}
+.logoimg img
+{
+    margin:5px;
+    margin-left: 10px;
+    height: 50px;
+}
+.navbar
+{
+    width: 90%;
+    background-color:var(--c3);
+    margin:10px;
+    border-radius: 5px;
+    margin-right: -5px;
+    display: flex;
+    flex-direction: row;
+}
+.navlinks
+{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+.nav
+{
+    margin: auto;
+}
+
+.search
+{
+    padding: 10px;
+    height: 400px;
+    border-radius: 5px;
+}
+.searchbar
+{
+    height: 40px;
+}
+.searchbar input
+{
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: var(--body);
+    color: var(--font);
+    width: 100%;
+}
+.items
+{
+    position: relative;
+    z-index: 99;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 85%;
+    display: none;
+    
+    width: 100%;
+}
+.items ul{
+    color: black;
+}
+#list
+{
+   /*display: ;*/
+   text-decoration: none;
+   background-color: rgba(133, 131, 131, 0.911);
+   height: auto;
+   max-height: 100%;
+   min-height: 50px;
+   border-radius: 5px;
+   padding-top: 5px;
+   margin-right: 25px;
+   width: 100%;
+   overflow:scroll;
+}
+#list li
+{
+    margin:5px;
+    margin-left: 25px;
+    margin-top: 10px;
+    display:flex;
+}
+#list li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*intro*/
+.introsec
+{
+    display: flex;
+    flex-direction: row;
+}
+.books
+{
+    width:15%;
+    padding:20px;
+    padding-top: 0px;
+    margin-left: -5px;
+}
+.books a
+{
+    text-decoration: none;
+    color: var(--font);
+}
+.book
+{
+    background-color: var(--c3);
+    margin:10px;
+    padding: 10px;
+    margin-left: -20px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.intro
+{
+    width: 85%;
+    margin: 10px;
+    margin-right: -5px;
+    display: flex;
+    flex-direction: row;
+}
+.intropara
+{
+    width: 70%;
+    margin: auto;
+    margin-top:30px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #131917;
+}
+.list
+{
+    width: 30%;
+    margin-top: 0px;
+}
+.list iframe
+{
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 5px;
+}
+.frame
+{
+    border: none;
+    width: 100%;
+    margin: auto;
+    color: var(--font);
+}
+
+/*Body*/
+.par
+{
+    margin: 50px;
+}
+
+/*w3schools dump*/
+/*.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }*/
+  
+  .nav
+  {
+    width: ;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*FOOTER*/
+.copyright
+{
+    margin:10px;
+    font-size: 11px;
+}
+.links
+{
+    font-size: 12px;
+    margin: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 4 0px;
+}
+.links a
+{
+    text-decoration: none;
+    color :aliceblue
+}
+.links ul {
+    list-style-type: none;
+}
+.links ul li img
+{
+    height: 14px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+#disc
+{
+    height:11px;
+}
+
+
+
+/*Mobile phones*/
+@media screen and (max-width:450px)
+{
+    .logo
+    {
+        width:15%;
+    }
+    .op
+    {
+        display: none;
+    }
+    .navbar
+    {
+        margin: 5px;
+    }
+
+    .intro
+    {
+        display: block;
+    }
+    .search
+    {
+        width: 100%;
+    }
+    .books{
+        display: none;
+    }
+    .list
+    {
+        padding: 10px;
+    }
+    .list iframe
+    {
+        width: 290px;
+    }
+}

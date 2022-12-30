@@ -9,6 +9,82 @@
     <title>Buzzhive</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="logo">
+            <div class="logoimg"><img src="buzzhive-high-resolution-logo-color-on-transparent-background.png"></div>
+        </div>
+        <div class="navbar">
+            <div class="sub nav op">
+                <select onchange="location = this.value;">
+                    <option value="" style="display:none">Subjects</option>
+                    <option value="https://www.google.com">Physics</option>
+                    <option value="">Chemistry</option>
+                    <option value="">Biology</option>
+                    <option value="">Computer Science</option>
+                    <option value="">English</option>
+                </select>
+            </div>
+            <div class="subs nav op">
+                <select>
+                    <option value="" style="display:none">Class</option>
+                    <option value="">9th</option>
+                    <option value="">10th</option>
+                    <option value="">11th</option>
+                    <option value="">12th</option>
+                </select>
+            </div>
+            <div class="about nav op">
+                <option><a href="#">About</a></option>
+            </div>
+            <div class="search nav">
+                <div class="searchbar">
+                    <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar"
+                        onfocus="show()">
+                </div>
+                <div class="items" id="it">
+                    <ul id="list" id="search">
+                        <li><a href="https://www.google.com">Physics<br>kiztbz</a></li>
+                        <li><a href="">Chemistry</a></li>
+                        <li><a href="">Mathematics</a></li>
+                        <li><a href="">Computer Science</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li id="notext" style="list-style: none;"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <iframe src="ML-aggarwal-class11-13.1.pdf"></iframe>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div style="font-size:14px">&trade;Buzzhive</div>
+            &reg;Kiztbz<br>
+            &copy;Mythical Corporations 2023
+        </div>
+        <div class="links">
+            <ul>
+                <a href="https://www.instagram.com/kiztbz/" target="__blank">
+                    <li><img src="insta.png">Instagram</li>
+                </a>
+                <a href="https://github.com/Kiztbz" target="__blank">
+                    <li><img src="git.png">Github</li>
+                </a>
+                <a href="https://discord.gg/9pjBmKaanZ" target="__blank">
+                    <li><img id="disc" src="disc.png">Discord</li>
+                </a>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

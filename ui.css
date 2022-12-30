@@ -256,6 +256,51 @@ body {
 .par h1{
     font-family: 'Rubik Bubbles', cursive;
 }
+.chap
+{
+    background-color: #2d424a;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+.chaplist
+{
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+}
+.chaplist a
+{
+    text-decoration: none;
+    color: var(--font);
+}
+.chaplist a:hover
+{
+    color : rgb(100, 200, 100);
+    animation-duration: 0.7s;
+    animation-name: hov;
+    animation-delay: 2ms;
+}
+.inactive a:hover
+{
+    color : rgb(200, 100, 100);
+    animation-duration: 0.7s;
+    animation-name: hov;
+    animation-delay: 2ms;
+}
+
+@keyframes hov {
+    from{
+        font-size: 20px;
+    }
+    50%{
+        font-size: 22px;
+    }
+    to {
+        font-size: 20px;
+    }
+}
+
 
 /*w3schools dump*/
 /*.navbar {
@@ -415,5 +460,65 @@ body {
 
     .list iframe {
         width: 290px;
+    }
+
+    .chap
+    {
+        width:90%;
+    }
+}
+
+/*tablet view*/
+@media screen and (max-width:650px) {
+
+
+
+    .navbar {
+        width:70%;
+        margin: 5px;
+        margin-right: auto;
+    }
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin: auto;
+        margin-left: auto;
+        width: 15%;
+        padding: 10px;
+        margin-left: 5px;
+    }
+
+    .intro {
+        display: block;
+    }
+    .intropara
+    {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .search {
+        width: 80%;
+        display: block;
+        width: 100%;
+    }
+
+    .books {
+        display: none;
+    }
+
+    .list {
+        padding: 10px;
+    }
+
+    .list iframe {
+        width: 290px;
+    }
+
+    .chap
+    {
+        width: 80%;
     }
 }
