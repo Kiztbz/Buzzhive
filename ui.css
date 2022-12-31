@@ -337,7 +337,7 @@ body {
 }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn {
+.dropdown:focus .dropbtn {
     background-color: rgba(0, 247, 255, 0.425);
     border-radius: 5px;
 }
@@ -559,6 +559,24 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+.sd
+{
+    z-index: 0;
+    background-color: #111;
+    box-shadow: none;
+    animation-name: sdin;
+    animation-duration: 1s;
+    animation-delay: 10ms;
+}
+
+@keyframes sdin {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
 
 
