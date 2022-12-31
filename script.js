@@ -16,29 +16,39 @@ function show() {
     })
 }
 
-function openPage() {document.getElementById('notext').innerHTML = "";
-var x = document.getElementById("search").value.toUpperCase();
-var ul = document.getElementById('list');
-var li = ul.getElementsByTagName('li');
-var f = 2;
+function openPage() {
+    document.getElementById('notext').innerHTML = "";
+    var x = document.getElementById("search").value.toUpperCase();
+    var ul = document.getElementById('list');
+    var li = ul.getElementsByTagName('li');
+    var f = 2;
 
-for (var i = 0; i < li.length; i++) {
-    var a = li[i].getElementsByTagName('a')[0];
+    for (var i = 0; i < li.length; i++) {
+        var a = li[i].getElementsByTagName('a')[0];
 
-    var textValue = a.textContent.toUpperCase();
-    if (textValue.indexOf(x) > -1) {
-        li[i].style.display = '';
-    }
-    else {
-        li[i].style.display = 'none';
-    }
+        var textValue = a.textContent.toUpperCase();
+        if (textValue.indexOf(x) > -1) {
+            li[i].style.display = '';
+        }
+        else {
+            li[i].style.display = 'none';
+        }
 
-    if (textValue.indexOf(x) == -1) {
-        f++;
-    }
-    if (f > li.length) {
-        document.getElementById('notext').innerHTML = "No results found";
+        if (textValue.indexOf(x) == -1) {
+            f++;
+        }
+        if (f > li.length) {
+            document.getElementById('notext').innerHTML = "No results found";
 
+        }
     }
 }
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "80%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }

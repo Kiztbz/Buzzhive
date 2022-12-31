@@ -6,10 +6,11 @@
     --body: #131917;
     --font: white;
 }
-html
-{
+
+html {
     overflow-x: hidden;
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -48,10 +49,9 @@ body {
 .logo {
     width: 20%;
     height: 60px;
-    margin: auto;
     min-width: 200px;
     border-radius: 5px;
-    margin-left: -5px;
+    margin: 5px;
 }
 
 .logoimg img {
@@ -145,9 +145,10 @@ body {
     text-decoration: none;
     color: black;
 }
-.menu
-{
+
+.menu {
     display: none;
+    margin: 5px;
 }
 
 
@@ -215,8 +216,8 @@ body {
     70% {
         margin-left: 2%;
     }
-    80%
-    {
+
+    80% {
         margin-left: -1%;
     }
 
@@ -253,49 +254,52 @@ body {
     font-family: 'Acme', sans-serif;
     font-size: 20px;
 }
-.par h1{
+
+.par h1 {
     font-family: 'Rubik Bubbles', cursive;
 }
-.block
-{
+
+.block {
     background-color: #2d424a;
     padding: 15px;
     width: 60%;
     border-radius: 10px;
 }
-.blocklist
-{
+
+.blocklist {
     border-radius: 5px;
     text-align: left;
     padding: 20px;
 }
-.block a
-{
+
+.block a {
     text-decoration: none;
     color: var(--font);
 }
-.blocklist a:hover
-{
-    color : rgb(100, 200, 100);
+
+.blocklist a:hover {
+    color: rgb(100, 200, 100);
     animation-duration: 0.7s;
     animation-name: hov;
     animation-delay: 2ms;
 }
-.inactive a:hover
-{
-    color : rgb(200, 100, 100);
+
+.inactive a:hover {
+    color: rgb(200, 100, 100);
     animation-duration: 0.7s;
     animation-name: hov;
     animation-delay: 2ms;
 }
 
 @keyframes hov {
-    from{
+    from {
         font-size: 20px;
     }
-    50%{
+
+    50% {
         font-size: 22px;
     }
+
     to {
         font-size: 20px;
     }
@@ -318,7 +322,6 @@ body {
 }
 
 .dropdown {
-    float: left;
     overflow: hidden;
 }
 
@@ -370,9 +373,9 @@ body {
     margin: 10px;
     font-size: 15px;
 }
-.diff
-{
-    font-family:Times New Roman;
+
+.diff {
+    font-family: Times New Roman;
     font-size: 13px;
 }
 
@@ -409,37 +412,38 @@ body {
 /*Mobile phones*/
 @media screen and (max-width:450px) {
     .logo {
-        min-width:10%;
+        min-width: 10%;
         width: 10%;
     }
 
-    .logoimg img
-    {
+    .logoimg img {
         content: url(buzzhive-website-favicon-color.png);
     }
 
     .navbar {
-        width:80%;
+        width: 80%;
         margin: 5px;
         margin-right: auto;
     }
-    .nav{
+
+    .nav {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
         margin: auto;
         margin-left: auto;
-        width: 10%;
-        padding: 10px;
-        margin-left: 5px;
+        width: 30%;
+        margin-right: 5px;
+        margin-left: 10px;
     }
 
     .intro {
         display: block;
     }
-    .intropara
-    {
+
+    .intropara {
         width: 100%;
         font-size: 20px;
     }
@@ -462,39 +466,40 @@ body {
         width: 290px;
     }
 
-    .block
-    {
-        width:90%;
+    .block {
+        width: 90%;
     }
 }
 
 /*tablet view*/
-@media screen and (max-width:850px) {
+@media screen and (min-width:450px) and (max-width:850px) {
 
 
 
     .navbar {
-        width:70%;
+        width: 70%;
         margin: 5px;
         margin-right: auto;
     }
-    .nav{
+
+    .nav {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
         margin: auto;
         margin-left: auto;
         width: 15%;
         padding: 10px;
-        margin-left: 5px;
+        margin: 5px;
     }
 
     .intro {
         display: block;
     }
-    .intropara
-    {
+
+    .intropara {
         width: 100%;
         font-size: 20px;
     }
@@ -517,8 +522,53 @@ body {
         width: 290px;
     }
 
-    .block
-    {
+    .block {
         width: 80%;
+    }
+}
+
+/* w3schools dump */
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
     }
 }

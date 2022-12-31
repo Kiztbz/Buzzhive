@@ -21,13 +21,14 @@
 
 <body>
     <div class="header">
-        <div class="logo">
-            <a href="index.html">
+
+        <a href="index.html">
+            <div class="logo">
                 <div class="logoimg">
                     <img>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
         <div class="navbar">
             <div class="navlinks">
                 <div class="home nav"><a href="index.html">Home</a></div>
@@ -63,13 +64,13 @@
                             <li><a href="math.html">Mathematics</a></li>
                             <li><a href="comp.html">Computer Science</a></li>
                             <li><a href="bio.html">Biology</a></li>
-                            <li><a href="mlag.html">ML Aggarwal</a></li>    
+                            <li><a href="mlag.html">ML Aggarwal</a></li>
                             <li id="notext" style="list-style: none;"></li>
                         </ul>
                     </div>
                 </div>
                 <div class="menu">
-                    <div clsas="menuimg"><img src="menu_FILL1_wght400_GRAD0_opsz48.png"></div>
+                    <div clsas="menuimg" onclick="openNav()"><img src="menu_FILL1_wght400_GRAD0_opsz48.png"></div>
                 </div>
             </div>
         </div>
@@ -85,6 +86,27 @@
                 <div class="book">NCERT</div>
                 <div class="book">Nootan Chemistry</div>
             </div>-->
+            <div id="mySidenav" class="sidenav">
+                <div class="side close" class="closebtn" onclick="closeNav()">&times;</div>
+                <div class="side"><a href="index.html">Home</a></div>
+                <div class="side">
+                    <div class="dropdown">
+                        <a id="sidebtn">Subjects
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="physics.html">Physics</a>
+                            <a href="chem.html">Chemistry</a>
+                            <a href="bio.html">Biology</a>
+                            <a href="math.html">Mathematics</a>
+                            <a href="comp.html">Computer Science</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="side"><a href="#">Clients</a></div>
+                <div class="side"><a href="#">Contact</a></div>
+                
+              </div>
             <div class="intro">
                 <div class="intropara">
                     <h1>Lost in Syllabus?</h1>
