@@ -1,2 +1,3 @@
-# M.notes
-Website to make notes available on a global scale.
+# Buzzhive
+
+A website to host study resources. 
