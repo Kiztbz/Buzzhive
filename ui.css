@@ -567,7 +567,6 @@ body {
     box-shadow: none;
     animation-name: sdin;
     animation-duration: 1s;
-    animation-delay: 10ms;
 }
 
 @keyframes sdin {

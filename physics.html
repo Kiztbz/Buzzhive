@@ -50,6 +50,7 @@
                         <a href="mlag.html">ML Aggarwal</a>
                     </div>
                 </div>
+                <div class="home nav"><a href="about.html">About</a></div>
                 <div class="search nav">
                     <div class="searchbar">
                         <input type="search" value="" id="search" onkeyup="openPage()" placeholder="searchbar"
@@ -68,12 +69,41 @@
                     </div>
                 </div>
                 <div class="menu">
-                    <div clsas="menuimg"><img src="menu_FILL1_wght400_GRAD0_opsz48.png"></div>
+                    <div clsas="menuimg" onclick="openNav()"><img src="menu_FILL1_wght400_GRAD0_opsz48.png"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="body">
+        <div id="mySidenav" class="sidenav">
+            <div class="side close"><a class="closebtn" onclick="closeNav()">&times;</a></div>
+            <div class="side"><a href="index.html">Home</a></div>
+            <div class="side"><a href="about.html">About</a></div>
+            <div class="side">
+                <div class="dropdown">
+                    <a id="sidebtn">Subjects
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content sd">
+                        <a href="physics.html">Physics</a>
+                        <a href="chem.html">Chemistry</a>
+                        <a href="bio.html">Biology</a>
+                        <a href="math.html">Mathematics</a>
+                        <a href="comp.html">Computer Science</a>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="dropdown">
+                    <a id="sidebtn">Books
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content sd">
+                        <a href="mlag.html">ML Aggarwal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="intro">
             <div class="intropara">
                 <h1>Physics</h1>
