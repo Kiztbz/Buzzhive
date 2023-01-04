@@ -203,10 +203,10 @@ body {
 @keyframes slidedn
 {
     from{
-        margin-bottom: 50%;
+        margin-bottom: 100%;
     }
 
-    40%{
+    60%{
         margin-bottom: 120px;
     }
 
