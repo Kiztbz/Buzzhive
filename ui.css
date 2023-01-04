@@ -186,9 +186,6 @@ body {
 }
 
 .intropara {
-    animation-duration: 2s;
-    animation-name: slidein;
-    animation-delay: 5ms;
     width: 80%;
     margin: auto;
     margin-top: 80px;
@@ -198,6 +195,30 @@ body {
     font-weight: bold;
     background-color: #131917;
     font-family: 'Bebas Neue', cursive;
+    animation-duration: 1.5s;
+    animation-name: slidedn;
+    animation-delay: 5ms;
+}
+
+@keyframes slidedn
+{
+    from{
+        margin-bottom: 50%;
+    }
+
+    40%{
+        margin-bottom: 120px;
+    }
+
+    to{
+        margin-bottom: 100px;
+    }
+}
+
+.in{
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-delay: 5ms;
 }
 
 
