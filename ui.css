@@ -215,7 +215,7 @@ body {
     }
 }
 
-.in{
+#in{
     animation-duration: 2s;
     animation-name: slidein;
     animation-delay: 5ms;
